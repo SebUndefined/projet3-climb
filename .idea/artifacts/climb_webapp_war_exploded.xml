@@ -1,0 +1,27 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="climb-webapp:war exploded">
+    <output-path>$PROJECT_DIR$/climb-webapp/target/climb-webapp</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="climb-webapp" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="climb-business-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="climb-business" />
+          </element>
+          <element id="archive" name="climb-consumer-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="climb-consumer" />
+          </element>
+          <element id="archive" name="climb-model-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="climb-model" />
+          </element>
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/climb-webapp/target/climb-webapp/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="climb-webapp/web/Web" />
+    </root>
+  </artifact>
+</component>
